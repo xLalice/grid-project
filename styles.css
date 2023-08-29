@@ -53,7 +53,7 @@ table {
 }
 
 header {
-    padding: 25px 35px;
+    padding: 10px 35px;
     background-color: white;
     grid-column: 2 / -1;
     display: grid;
@@ -79,6 +79,7 @@ header {
     border: 0;
 }
 
+
 .search {
     display: flex;
     gap: 15px;
@@ -90,10 +91,13 @@ header {
     flex: 1;
     border-radius: 20px;
     padding: 5px;
+    background-color: lightgray;
+    border: 0;
 }
 
 .user-avatar {
     max-width: 60px;
+    max-height: 30px;
     border-radius: 50%;
 
 }
@@ -106,9 +110,71 @@ header {
 .dashboard {
     grid-row: 1/-1;
     background-color: #1992d4;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    padding: 20px;
+}
+
+.dashboard * {
+    color: white;
+}
+
+.dashboard > h1 {
+    font-size: 2rem;
+}
+
+.dashboard > img {
+    width: 100%;
+}
+
+.dashboard-buttons {
+    grid-column: 1 / -1;
+    background-color: #1992d4;
+    border: 0;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    align-items: center;
+}
+
+.dashboard-buttons > h2 {
+    justify-self: start;
+    font-size: 1.5rem;
+}
+
+button:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#community {
+    margin-bottom: 60px;
 }
 
 main {
     grid-column: 2/-1;
     background-color: yellow;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    padding: 30px 15px;
+    background-color: #e2e8f0;
+    color: black;
+}
+
+.main-projects {
+    grid-row: 1 / -1;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 20px repeat(3, 1fr);
+    gap: 20px;
+}
+
+.main-projects > p {
+    grid-column: 1 / -1;
+}
+
+.card {
+    background-color: #ffffff;
+    border-left: 5px solid #f0b429;
+    padding: 30px 15px;
 }
