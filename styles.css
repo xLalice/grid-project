@@ -170,7 +170,8 @@ main {
     gap: 20px;
 }
 
-.main-projects > p {
+.main-projects > p,
+.trending > p {
     grid-column: 1 / -1;
 }
 
@@ -191,10 +192,37 @@ main {
 .card-buttons {
     grid-column: 4/5;
     display: flex;
+    align-items: center;
     gap: 20px;
 }
 
 .card-buttons > button {
     border: none;
+    padding: 5px;
+}
+
+.announcements,
+.trending {
+    background-color: white;
+    padding: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.announcements > p,
+.announcement > h3,
+.trending > p {
+    font-weight: bolder;
+}
+
+.trend {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: repeat;
+}
+
+.trend > img {
+    grid-row: span 2;
 }
 
