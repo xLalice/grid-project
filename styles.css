@@ -44,3 +44,71 @@ table {
 
 
 /* My styles */
+
+.grid-container {
+    min-height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 4fr;
+}
+
+header {
+    padding: 25px 35px;
+    background-color: white;
+    grid-column: 2 / -1;
+    display: grid;
+    grid-template-columns: 7fr 1fr 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    font-weight: bold;
+}
+
+.greetings {
+    justify-self: start;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.header-button {
+    padding: 10px 25px;
+    color: white;
+    background-color: #1992d4;
+    border-radius: 20px;
+    font-weight: bold;
+    border: 0;
+}
+
+.search {
+    display: flex;
+    gap: 15px;
+    width: 80%;
+    align-items: center;
+}
+
+.search-bar {
+    flex: 1;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+.user-avatar {
+    max-width: 60px;
+    border-radius: 50%;
+
+}
+
+.search {
+    justify-self: start;
+}
+
+
+.dashboard {
+    grid-row: 1/-1;
+    background-color: #1992d4;
+}
+
+main {
+    grid-column: 2/-1;
+    background-color: yellow;
+}

@@ -5,22 +5,28 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="styles.css">
+    
 </head>
 <body>
     <div class="grid-container">
         <header>
-            <i class="search-icon"></i>
-            <input class="search-bar" type="text">
-            <i class="notif-icon"></i>
-            <img src="user-avatar">
+            <div class="search">
+                <i class="fa fa-search"></i>
+                <input class="search-bar" type="text">
+            </div>
+            
+            <i class="fa fa-bell"></i>
+            <img class="user-avatar" src="user-avatar.png">
             <h1>Morgan Oakley</h1>
-            <img src="user-avatar">
-            <p>Hi there,</p>
-            <p>Morgan Oakley(@morgan)</p>
-            <button>New</button>
-            <button>Upload</button>
-            <button>Share</button>
+            <div class="greetings">
+                <img class="user-avatar" src="user-avatar.png">
+                <p>Hi there,<br>Morgan Oakley(@morgan)</p>
+            </div>
+            <button class="header-button">New</button>
+            <button class="header-button">Upload</button>
+            <button class="header-button">Share</button>
         </header>
         <aside class="dashboard">
             <img src="dashboard-icon">
